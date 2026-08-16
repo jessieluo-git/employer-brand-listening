@@ -5,8 +5,5 @@
   "description": "企业雇主品牌社交媒体倾听平台（全球范围，中国为主）— 全栈可交互原型",
   "scripts": {
     "start": "node server/server.js"
-  },
-  "engines": {
-    "node": ">=22"
   }
 }
