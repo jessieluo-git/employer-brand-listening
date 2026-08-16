@@ -1,0 +1,14 @@
+# Render Blueprint：企业雇主品牌社交媒体倾听平台
+# 用法：在 Render 控制台 Connect 本仓库，或关联后自动按此文件部署。
+services:
+  - type: web
+    name: employer-brand-listening
+    runtime: node
+    plan: free
+    branch: main
+    buildCommand: ""
+    startCommand: node server/server.js
+    healthCheckPath: /api/company
+    envVars:
+      - key: NODE_ENV
+        value: production
