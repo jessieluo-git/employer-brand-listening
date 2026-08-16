@@ -366,6 +366,7 @@ function load() {
   return db;
 }
 function save() {
+  fs.mkdirSync(path.dirname(DB_FILE), { recursive: true });
   fs.writeFileSync(DB_FILE, JSON.stringify(db), 'utf-8');
 }
 function audit(actor, action) {
